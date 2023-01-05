@@ -8,16 +8,72 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/mycustom.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/atelier-cave-light.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h2>Reactive Applications</h2>
+						<h2>With Project Reactor</h2>
+					</section>
+					<section data-auto-animate>
+						<br>
+						<div style="text-align: left;">
+							<h2>Contents:</h2>
+							<h4 class="fragment fade-left">➡ What are <em>"Reactive Applications"</em>?</h4>
+							<h4 class="fragment fade-left">➡ Reactive Streams</h4>
+							<h4 class="fragment fade-left">➡ Project Reactor + Demo</h4>
+						</div>
+					</section>
+					<section data-auto-animate>
+						<br>
+						<div style="text-align: left;">
+							<h2>Contents:</h2>
+							<h4>➡ Disclaimers</h4>
+							<h4>➡ What are <em>"Reactive Applications"</em>?</h4>
+							<h4>➡ Reactive Streams</h4>
+							<h4>➡ Project Reactor + Demo</h4>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Disclaimers:</h2>
+						<ul>
+							<li class="fragment fade-left">
+								<em>Trigger Warning</em>:
+								<ul>
+									<li class="fragment fade-left">This talk covers a Java library 😱</li>
+								</ul>
+							</li>
+							<li class="fragment fade-left">I am not a Java nor a JVM expert</li>
+							<li class="fragment fade-left">
+								I have < 2 years of professional Java experience
+								<ul>
+									<li class="fragment fade-left">Yes, it's a start-up</li>
+									<li class="fragment fade-left">No, we don't do Blockchain or AI</li>
+								</ul>
+							</li>
+							<li class="fragment fade-left">Most of it with Project Reactor</li>
+							<li class="fragment fade-left">No, I do not like Spring Boot</li>
+							<li class="fragment fade-left">Questions always welcome!</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>What are</h2>
+						<h2>Reactive Applications?</h2>
+					</section>
+					<section>
+						<h2>What is Reactive?</h2>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -30,10 +86,12 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				controls: false,
 				hash: true,
+				navigationMode: 'linear',
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>

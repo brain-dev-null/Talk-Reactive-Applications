@@ -1,0 +1,58 @@
+/**
+ * Black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Heading-related stuff
+$headingFont: 'Montserrat', Impact, sans-serif;
+$headingFontWeight: Bold;
+$headingColor: #286983;
+//$headingTextShadow: 2px 2px #705D56;
+//$heading1TextShadow: 3px 3px #705D56;
+$headingLetterSpacing: 0;
+$headingTextTransform: none;
+
+// Specific heading-related size
+
+$heading1Size: 4.71em;
+$heading2Size: 2.64em;
+$heading3Size: 1.94em;
+$heading4Size: 1.25em;
+
+
+// Background-related stuff
+$backgroundColor: #faf4ed;
+$selectionBackgroundColor: #286983;
+
+
+// Override theme settings (see ../template/settings.scss)
+
+$mainFont: 'Fira Sans', sans-serif;
+$mainColor: #286983;
+$mainFontSize: 30px;
+$linkColor: #6db33f;
+$linkColorHover: lighten( $linkColor, 20% );
+
+
+
+// Change text colors against light slide backgrounds
+// @include light-bg-text-color(#222);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
